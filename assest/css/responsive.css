@@ -1,0 +1,381 @@
+@media (min-width: 992px) {
+    .container-lg, .container-md, .container {
+        max-width: 960px;
+    }
+    
+}
+ @media (min-width: 1200px) {
+	.container {
+	    max-width: 1100px;
+	}
+}
+
+@media (min-width: 1300px) {
+	.container {
+	    max-width: 1200px;
+	}
+    
+}
+@media (min-width: 1600px) {
+	.container {
+	    max-width: 1444px;
+	}
+    
+}
+
+@media (max-width: 1600px) {
+	.lovers-img {
+        width: 70%;
+    }
+    .container-box p {
+        font-size: 15px;
+    }
+    .msg-box p {
+        font-size: 16px;
+    }
+    .Your-Phone-text {
+        padding: 136px 0px 82px 160px;
+    }
+    .haert-img {
+        top: 126px;
+        left: 99px;
+    }
+    .love_letter-img {
+        top: 29px;
+        left: 192px;
+    }
+    .meet-choosen-box {
+        bottom: 43px;
+        background-color: var(--whiteClr);
+        text-align: center;
+        left: unset; 
+        right: 0px;
+    }
+    .social-media-icon svg{
+        width: 26%;
+    }
+    .border-start , .list-footer span{
+        font-size: 13px ;
+    }
+    .border-start {
+        padding-left: 30px;
+        padding-right: 24px;
+    }
+    .social-media-icon {
+        margin-left: 37px;
+    }
+    .list-footer span {
+        padding-right: 35px;
+    }
+    .chat-icon{
+        width: 47px;
+    }
+}   
+
+@media (max-width: 1200px) {
+	h2 {
+        font-size: 35px;
+    }
+    .hero-section-text{
+        padding-left: 15px;
+    }
+    .mainmenu li {
+        padding-right: 5px;
+    }
+    .meet-choosen-box {
+        left: 309px;
+        bottom: 9%;
+        right: unset;
+        padding: 10px;
+    }
+    .meet-choosen-span{
+        font-size: 35px;
+      }
+
+    
+    .lovers-img {
+        width: 73%;
+    }
+    .Your-Phone-text {
+        padding: 160px 0px 121px 162px;
+    }
+    .container-box {
+        padding: 20px 9px;
+    }
+    .your-phone-img {
+        margin-top: 50px;
+        width: 549px;
+    }
+    .list-footer span {
+        padding-right: 15px;
+    }
+    .border-start {
+        padding-left: 30px;
+        padding-right: 27px;
+    }
+    .social-media-icon {
+        margin-left: 0px;
+    }
+   
+}
+@media (max-width: 992px) {
+    .navbar-collapse {
+        position: fixed;
+        top: 74px;
+        right: -100%; 
+        width: 100%; 
+        height: 100vh !important;
+        background-color: #fff; 
+        transition: right 0.8s ease; 
+        z-index: 999; 
+    }
+
+    .navbar-collapse.show {
+        right: 0;
+    }
+
+    .btn-close {
+        position: absolute;
+        right: 33px;
+        background: none;
+        border: none;
+        top: 0%;
+        cursor: pointer;
+        color: black;
+    }
+    .btn-close span{
+        font-size: 39px;
+    }
+    .header {
+        padding: 0px 20px;
+    }
+
+    
+    .shift-content {
+        transition: margin-right 0.3s ease;
+    }
+
+    .shifted {
+        margin-right: 80%; 
+    }
+
+    .love_letter-img{
+        top: 30px;
+        left: 300px;
+    }
+    .haert-img{
+        top: 120px;
+        left: 140px;
+    }
+    .meet-choosen-box {
+        left: 507px;
+        top: 399px;
+        right: 57px;
+        bottom: auto;
+    }
+    .Your-Phone-text{
+        padding: 60px 0px 60px 30px;
+    }
+    .your-phone-img{
+            width: 73%;
+        
+    }
+    .msg-box {
+        padding: 11px 7px;
+        left: -1px;
+    }
+    .flex-basis{
+        width: 50%;
+    }
+    .border-start{
+        border-left: none !important;
+    }
+    .social-media-icon svg {
+        width: 15%;
+    }
+    .border-start {
+         padding-left: 0px; 
+         padding-right: 0px;
+    }
+    .border-start {
+        margin-left: 0px;
+        padding-left: 10px;
+    }
+    footer{
+        padding: 10px 0px
+    }
+    .footer-logo {
+        margin: 9px 0px;
+    }
+}
+@media (max-width: 768px) {
+	p{
+        font-size: var(--font-size18);
+    }
+    h1{
+        font-size: 40px;
+        font-weight: 700;
+    }
+    h4{
+        font-size: 20px;
+    }
+    
+    .love_letter-img{
+        top: 30px;
+        left: 200px;
+    }
+
+    .navbar-brand img{
+        width: 75%;
+    }
+    .haert-img{
+        top: 120px;
+        left: 90px;
+    }
+    .meet-choosen-box {
+        display: none;
+    }
+    .msg-box {
+        top: 172px;
+        padding: 4px 10px;
+        left: 0px;
+    }
+    .msg-box p {
+        font-size: 9px;
+    }
+    .msg-icon {
+        padding: 0px 7px 0px;
+        height: 23px;
+    }
+    .msg-icon svg {
+        width: 9px;
+        margin-bottom: 14px;
+    }
+    .map-contant::before {
+        top: 45%;
+    }
+    .map-contant-box {
+        width: 480px;
+    }
+    .btn-floating{
+        display: none;
+      }
+}
+@media (max-width: 520px) {
+    h6{
+        font-size: 17px;
+    }
+    h5{
+        font-size: 22px;
+    }
+    /* .header {
+        padding: 0px 0px;
+    } */
+    .haert-img {
+        top: 88px;
+        left: 58px;
+    }
+    .love_letter-img {
+        top: 7px;
+        left: 137px;
+    }
+    .hero-icon{
+        padding: 4px 9px;
+    }
+    .hero-icon svg{
+        height: 20px;
+        width: auto;
+    }
+    .hero-section-text {
+        padding-left: 17px;
+    }
+    .About-box p{
+        font-size: 15px;
+    }
+    
+    .card-hero-img{
+        width: 50%;
+    }
+    
+    .meet-choosen-box p {
+        font-size: 12px;
+    }
+    .meet-choosen-text p {
+        padding: 14px 0px;
+    }
+    
+    .lover-communication .btn {
+        padding: 9px 19px;
+    }
+    .video-shooting {
+        height: 110px;
+    }
+    .arrow-line svg{
+        width: 78px;
+    }
+    .arrow-line {
+        top: 34px;
+        left: -70px;
+    }
+    .msg-icon-2 svg{
+        width: 6px;
+        margin: -21px 0px -3px;
+    }
+    .msg-icon-2 {
+        padding: 0px 5px;
+        height: 19px;
+    }
+    .msg-box-2 p {
+        font-size: 9px;
+    }
+    .msg-box-2 {
+        left: -59px;
+        padding: 7px 5px;
+    }
+    .video-shooting{
+        margin-top: 20px;
+    }
+    .call-box {
+        padding: 14px;
+    }
+    .call-box {
+        top: 61%;
+        right: 128px;
+    }
+    .Avatar{
+        width: 50%;
+    }
+    .Your-Phone-text {
+        padding: 60px 0px 60px 17px;
+    }
+    .map-contant-box {
+        width: 360px;
+        padding: 20px;
+    }
+    .map-contant-box  p{
+        font-size: 14px;
+    }
+    .map-contant-box  img{
+        width: 14%;
+    }
+    .map-contant::before {
+        top: 64%;
+        left: 42%;
+    }
+    .map-contant {
+        padding: 84px 0px 148px;
+        background-position: bottom;
+        background-size: contain;
+    }
+    .border-start, .list-footer span {
+        font-size: 10px;
+    }
+    .list-footer span {
+        padding-right: 3px;
+    }
+    .social-media-icon{
+        padding: 0px; 
+    }
+}
+
+
