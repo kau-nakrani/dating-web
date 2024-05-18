@@ -9,660 +9,609 @@
 
     [Table of contents]
 
-        1.  general-css
-        2.  Hearder
-        3.  Hero-section
-        4.  about-section
-        5.  meet-choosen-section
-        6.  Lover-Communication-section
-        7.  Your-Phone-section
-        8.  Customer's-Say-section
-        9.  footer
-
------------------------------------------------------------------------------------*/       
-
-
-    /* 1.  General-Css */
-
-    @import url('skin.css');
-    
-      ::selection {
-        background: rgba(244, 10, 122, 1);
-      }
-
-    p{
-        font-size: var(--font-size21);
-    }
-
-    h1{
-        font-size: var(--font-size58);
-        font-weight: 700;
-    }
-
-    h2{
-        font-size: 50px;
-        font-weight: 800;
-    }
-
-    h3{
-        font-size: var(--font-size40);
-        font-weight: 600;
-    }
-
-    h4{
-        font-size: var(--font-size26);
-        font-weight: 600;
-    }
-    h5{
-        font-size: var(--font-size25);
-        font-weight: 600;
-    }
-    h6{
-        font-size: var(--font-size20);
-        font-weight: 600;
-    }
-
-    *{
-        margin: 0%;
-        padding: 0%;
-        box-sizing: border-box;
-        font-family: var(--primery-font);
-        font-weight: 400;
-        font-size: var(--font-size21);
-    }
-    .container{
-        margin: auto;
-        /* overflow: hidden; */
-    }
-    section , footer {
-        overflow: hidden;
-    }
-    body{
-        background-color: rgb(255, 251, 251);
-    }
-
-    .btn{
-        font-size: var(--font-size20);
-        font-weight: 600;
-        background:   linear-gradient(to  right, rgba(244, 10, 122, 1), rgba(235, 1, 55, 1)) ;
-        color: var(--whiteClr);
-        border-radius: 8px;
-    }
-
-    .btn:hover{
-        box-shadow:  0px 9px 12px 0px rgba(131, 0, 102, 0.4);
-        transition: box-shadow 0.2s ease-in-out 0s;
-        color: var(--whiteClr);
-    }
-
-    .btn:focus{
-        box-shadow: none;
-    }
-
-    /* bottom to top button */
-    
-    #btn-back-to-top {
-        position: fixed;
-        bottom: 102px;
-        right: 20px;
-        display: none;
-        z-index: 9999;
-        border-radius: 50%;
-        padding: 6px 12px;
-      }
-      
-    /*--- 1. header---- */
-
-    .no-scroll {
-        overflow: hidden;
-    }
-
-    .hidden {
-        display: none;
-    }
-    .header{
-        padding: 29px 0px ;
-        box-shadow: 0px 2px 6px 0px rgba(0, 0, 0, 0.1);
-        background-color: var(--whiteClr);
-    }
-    
-    .header-sticky{
-        position: relative;
-    }
-    .header-sticky.sticky-top {
-        position: fixed;
-        left: 0;
-        top: 0;
-        right: 0;
-        background-color: rgb(255, 255, 255);
-        box-shadow: 0 10px 15px rgba(25, 25, 25, 0.1);
-        z-index: 99999;
-        
-    }
-    .header-sticky.sticky-top {
-        -webkit-animation-duration: 1s;
-        animation-duration: 1s;
-        -webkit-animation-fill-mode: both;
-        animation-fill-mode: both;
-        -webkit-animation-name: fadeInDown;
-        animation-name: fadeInDown;
-      }
-      @-webkit-keyframes fadeInDown {
-        from {
-          opacity: 0;
-          -webkit-transform: translate3d(0, -100%, 0);
-          -ms-transform: translate3d(0, -100%, 0);
-          transform: translate3d(0, -100%, 0);
-        }
-        to {
-          opacity: 1;
-          -webkit-transform: none;
-          -ms-transform: none;
-          transform: none;
-        }
-      }
-      @keyframes fadeInDown {
-        from {
-          opacity: 0;
-          -webkit-transform: translate3d(0, -100%, 0);
-          -ms-transform: translate3d(0, -100%, 0);
-          transform: translate3d(0, -100%, 0);
-        }
-        to {
-          opacity: 1;
-          -webkit-transform: none;
-          -ms-transform: none;
-          transform: none;
-        }
-      }
-
-    .mainmenu li {
-        padding-right: 26px;
-    }
-
-    .mainmenu li a{
-        color: var(--TundoraClr);
-        font-size: var(--font-size18 );
-        font-weight: 500;
-    }
-
-    .mainmenu li a:focus-visible{
-        outline: none;
-    }
-
-    .mainmenu li a.active   , .mainmenu li a:hover {
-        color: var(--Torch-Red) !important;
-    }
-
-    .log-in-btn{
-        background : none !important;
-        color: var(--blackClr);
-        margin-right: 30px;
-    }
-
-    .contact-btn{
-        background: var(--Torch-Red) ;
-        padding: 11px 22px;
-        border-radius: 5px; 
-    }
-
-    .navbar-light .navbar-toggler {
-        color: none; 
-        border: none;
-    }
-    .navbar-toggler:focus {
-        box-shadow: 0 0 0 0rem; 
-    }
-
-    .contact-btn:hover{
-        box-shadow:  0px 9px 12px 0px rgba(131, 0, 102, 0.4);
-    }
-
-    .navbar-toggler-icon{
-        color: black !important;
-    }
-    .log-in-btn {
-        font-size: var(--font-size20);
-        font-weight: 600;
-    }
-
-    /* ------3.  Hero-section------- */
-
-    .hero-section{
-        background:   linear-gradient(to  right, rgba(244, 10, 122, 1), rgba(235, 1, 55, 1)) ;
-        padding: 40px 0px 122px;
-        color: var(--whiteClr);
-            
-    }
-
-    .hero-img{
-        max-width: 85%;
-    }
-
-
-    .hero-btn{
-        background: var(--whiteClr);
-        color: var(--redClr);
-        padding: 11px 30px; 
-    }
-    .hero-btn:hover{
-        color: var(--redClr);
-    }
-
-    .haert-img{
-        top: 136px;
-        left: 131px;
-        
-    }
-
-
-    
-    @keyframes heartFadeInOut {
-        0% {transform: scale(1);}
-        25% {transform: scale(.97);}
-        35% {transform: scale(.9);}
-        45% {transform: scale(1.1);}
-        55% {transform: scale(.9);}
-        65% {transform: scale(1.1);}
-        75% {transform: scale(1.03);}
-        100% {transform: scale(1);}
-    }
-      
-    .hero-icon { 
-        animation-name: heartFadeInOut; 
-        animation-iteration-count: infinite;
-        animation-duration: 2s;
-    }
-
-    .love_letter-img{
-        top: 43px;
-        left: 246px;
-    }
-
-    .hero-icon{
-        border-radius: 50%;
-        background-color: var(--whiteClr);
-        padding: 5px 9px;
-        position:absolute;
-    }
-
-
-    .hero-section-text{
-        background-image: url(../images/backgrounds/hero-section-bg.svg);
-        background-repeat: no-repeat;
-        padding-left: 70px;
-    }
-
-    /* ----4.  about-section------ */
-
-    .about-section{
-        padding: 70px 0px;
-    }
-
-    .about-box{
-        background-color: var(--whiteClr);
-        border-radius: 34px;
-        padding: 40px 10px 40px 10px;
-        max-width: 405px;
-        box-shadow: 4px 7px 45px 0px rgba(0, 0, 0, 0.03);
-        box-sizing: border-box;
-    }
-    .about-box-flex{
-        flex-basis: 28%;
-    }
-    .about-box svg{
-       margin: 0px 20px;
-       max-height: 400px;
-    }
-
-    .meeting-icon-img::before,
-    .call-icon-img::before,
-    .chat-icon-img::before{
-        content: "";
-        position: absolute;
-        top: 30%;
-        bottom: 0%;
-        left: 30%;
-        height: calc(100% - 55px);
-        width: calc(100% - 50px);
-        border-radius: 50%;
-    }
-
-    .meeting-icon-img::before {
-        box-shadow: 0px 14px 44px 0px rgba(255, 152, 0, 0.5);
-        background: rgba(255, 152, 0, 16%);
-    }
-    .call-icon-img::before {
-        box-shadow: 0px 14px 44px 0px rgba(255, 0, 0, 0.5);
-        background: rgba(255, 0, 0, 16%) ;
-    }
-    .chat-icon-img::before {
-        box-shadow: 0px 14px 44px 0px rgba(225, 179, 1, 0.5);
-        background: rgba(225, 179, 1, 16%) ;
-    }
-
-    .about-box p{
-        color: var(--TundoraClr);
-        font-size: var(--font-size18);
-        font-weight: 500;
-    }
-
-    .about-box span{
-        font-size: var(--font-size26);
-        font-weight: 600;
-    }
-
-
-
-    .col-md-6{
-        padding-bottom: 30px;
-    }
-
-    .meet-color{
-        color: var(--Orange-Peel);
-    }
-    .call-color{
-        color: var(--Scarlet-red);
-    }
-    .chat-color{
-        color: var(--Dark-Goldenrod);
-    }
-
-    /* -----5.  meet-choosen-section --------*/
-
-    .meet-choosen-section{
-        background: rgba(255, 235, 246, 0.34)   url("../images/backgrounds/meet-choosen-section-bg.svg");
-        background-repeat: no-repeat;
-        background-position: right;
-        padding: 95px 0px;
-    }
-
-    .meet-choosen-box{
-        bottom: 43px;
-        background-color: var(--whiteClr);
-        text-align: center;
-        left: 501px;
-        padding: 22px 34px;
-        border-radius: 10px;
-        box-shadow: -6px 6px 20px 0px rgba(230, 16, 126, 0.17);
-    }
-
-    .meet-choosen-box p{
-        font-size: 14px;
-        color: rgb(161, 161, 161);
-    }
-
-    .red-color-box{
-        background-color: rgb(244, 0, 0);
-        border-radius: 50%;
-        padding: 2px 5px 8px; 
-        border: 1px solid var(--whiteClr);
-        box-shadow: 0px 7px 8px 0px rgba(244, 0, 0, 0.37);
-    }
-    .meet-choosen-section .w-100 {
-        width: 87% !important;
-    }
-    .green-color-box{
-        background-color: rgb(0, 244, 49);
-        border-radius: 50%;
-        padding: 2px 5px 8px; 
-        border: 1px solid var(--whiteClr);
-        box-shadow: 0px 7px 8px 0px rgba(73, 244, 0, 0.37);
-    }
-
-    .meet-choosen-span{
-        color: var(--Venetian-Red);
-        font-size: var(--font-size50);
-        font-weight: 800;
-    }
-
-    .meet-choosen-text p{
-        color: var(--TundoraClr);
-        padding: 40px 0px ;
-    }
-    .meet-choosen-text .btn{
-        padding: 16px 36px ;
-    }
-
-    /* ------6. Lover-Communication-section -------*/
-    
-    .lover-communication{
-        background-color: rgba(255, 251, 251, 1);
-        padding: 35px 0px 102px ;
-    }
-
-    .lover-p-color{
-        color: var(--TundoraClr);
-    }
-
-    .lover-communication .container-box span{
-        font-size: 40px;
-        font-weight: 600;
-    }
-
-    .container-box p{
-        font-size: 19px;
-    }
-    .container-box {
-        max-width: 273px;
-        background-color: var(--whiteClr);
-        border-radius: 14px;
-        padding: 20px 0px 20px 33px;
-        box-shadow: 4px 7px 45px 0px rgba(0, 0, 0, 0.03);
-    }
-
-    .lover-communication .btn{
-        padding: 11px 23px;
-    }
-
-    .lover-communication-images-bg{
-        background-image: linear-gradient(to top, rgba(255, 238, 239, 1), rgba(255, 251, 251, 1));
-        border-radius: 50%;
-        margin: 50px 15px;
-    }
-
-    .lover-communication-images {
-        border-radius: 50%;
-        background-image: url(../images/event-images/lover-before-border-rounded.svg);
-        padding: 29px;
-        background-repeat: no-repeat;
-        background-size: 100% 100%;
-        width: 100%;
-        height: 100%;
-    }
-
-    /* .arrow-line{
-        content: "";
-        top: 41px;
-        left: -113px;
-        background-size: 10% 10%;
-        background-repeat: no-repeat;  
-    } */
-
-    .msg-box{
-        top: 224px;
-        background-color: var(--whiteClr);
-        border-radius: 7px;
-        box-shadow: 0px 4px 13px 0px rgba(0, 0, 0, 0.06) ;
-        padding: 11px 14px;
-        left: -49px;
-        box-shadow: 0px 4px 13px 0px rgba(0, 0, 0, 0.06);
-    }
-
-    .msg-box p{
-        font-size: 20px ;
-        color: var(--TundoraClr);
-
-    }
-
-    .msg-icon{
-        background: linear-gradient(to right, rgba(244, 10, 122, 1), rgba(235, 1, 55, 1));
-        border-radius: 50%;
-        padding: 3px 15px 10px;
-    }
-
-    .video-call-img{
-        top: 25px;
-        right: -3px;
-    }
-
-    .video-call-line-arrow::before{
-        content: "";
-        background: url(../images/icons/line-arrow.svg);
-        position: absolute;
-        top: 26px;
-        height: 142px;
-        width: 140px;
-        left: -115px;
-        background-repeat: no-repeat;
-    }
-
-    .msg-box-2 {
-        top: 106px;
-        left: -84px;
-        background-color: var(--whiteClr);
-        border-radius: 7px;
-        box-shadow: 0px 4px 13px 0px rgba(0, 0, 0, 0.06) ;
-        padding: 7px 9px;
-    }
-
-    .msg-box-2 p{
-        font-size: 12px;
-    }
-    .video-shooting{
-        max-height: 180px;
-    }
-
-    .msg-icon-2{
-        background: linear-gradient(to right, rgba(244, 10, 122, 1), rgba(235, 1, 55, 1));
-        border-radius: 50%;
-        padding: 0px 7px;
-        height: 24px;
-    }
-
-    .msg-icon-2 svg{
-        margin: -18px 0px -1px;
-    }
-
-    .call-box .red-color-box {
-        padding: 2px 3px 8px;
-    }
-    .call-box{
-        background-color: var(--whiteClr);
-        padding: 20px   ;
-        border-radius: 20px ;
-        top: 50%;
-        right: 18px;
-        box-shadow: 0px 13px 25px 0px rgba(185, 8, 8, 0.16);
-    }
-
-    .call-box p{
-        font-size: 15px;
-    }
-
-
-    /* 7.  Your-Phone-section */
-
-    .Your-Phone{
-        background-color: rgba(255, 235, 246, 1);
-        background:  rgba(255, 235, 246, 1) url(../images/backgrounds/your-phone-banner.png);
-        background-repeat: no-repeat;  
-    }
-
-    .your-phone-img{
-        margin-top: 83px;
-    }
-
-    .Your-Phone-text{
-        padding: 148px 0px 141px 160px;
-    }
-
-    .Your-Phone .btn{
-        padding: 11px 30px;
-        border-radius: 8px;
-    }
-
-  
-
-    /* 8.  Customer's-Say-section */
-
-    .customer-say{
-        padding: 81px 0px 30px;
-    }
-
-    .map-contant{
-        background-image: url(../images/backgrounds/map-banner.svg);
-        padding: 102px 0px 432px;
-        background-repeat: no-repeat;
-        background-position: center;
-    }
-
-    .map-contant-box{
-        background-color: var(--whiteClr);
-        max-width: 605px;
-        padding: 40px 46px;
-        border-radius: 21px;
-        box-shadow: 0px 12px 24px 0px rgba(0, 0, 0, 0.25);
-    }
-
-    .triangle-down {
-        max-width: 0px; 
-        position: absolute;
-        max-height: 0px; 
-        border-left: 46px solid transparent;
-        border-right: 46px solid transparent;
-        border-top: 50px solid #ffffff;
-        top: 47%;
-        left: 47%;
-    }
-
-    /* 9.  footer */
-
-    footer{
-        padding: 44px 0px;
-        background-color: var(--Tyrian-Purple);
-    }
-
-    .footer-logo{
-        margin: 22px 0px;
-        height: 29px;
-        width: 161px;
-    }
-
-    .border-start {
-        color: var(--whiteClr);
-        margin-left: 50px;
-    }
-
-    .border-start , .list-footer span{
-        font-size: 17px ;
-        color: var(--whiteClr);
-    }
-
-    .copyright{
-        padding-right: 14px;
-    }
-
-    .list-footer span{
-        padding-right: 50px;
-    }
-
-    .social-media-icon{
-        margin-left: 62px;
-    }
-
-    .border-start{
-        padding-left: 46px;
-        padding-right: 32px;
-    }   
-
-
-
-
-    .icons-rounde {
-        border: none;
-        border-radius: 50%;
-        background-color: var(--whiteClr);
-        padding: 10px 15px 17px;
-        align-self: center;
-    }
+        1 General CSS
+        2 Hearder
+        3 Hero Section
+        4 About section
+        5 Meet Choosen Section
+        6 Lover Communication Section
+        7 Your Phone Section
+        8 Customer's Say Section
+        9 Footer
+
+-----------------------------------------------------------------------------------*/
+
+@import url('fonts.css');
+@import url('variables.css');
+@import url('animate.css');
+
+/* 1 General CSS */
+::selection {
+    background: var(--primary-color-rgb);
+}
+
+p {
+    font-size: var(--font-size21);
+}
+
+h1 {
+    font-size: var(--font-size58);
+    font-weight: 700;
+}
+
+h2 {
+    font-size: 50px;
+    font-weight: 800;
+}
+
+h3 {
+    font-size: var(--font-size40);
+    font-weight: 600;
+}
+
+h4 {
+    font-size: var(--font-size26);
+    font-weight: 600;
+}
+
+h5 {
+    font-size: var(--font-size25);
+    font-weight: 600;
+}
+
+h6 {
+    font-size: var(--font-size20);
+    font-weight: 600;
+}
+
+* {
+    margin: 0%;
+    padding: 0%;
+    box-sizing: border-box;
+    font-family: var(--primery-font);
+    font-weight: 400;
+    font-size: var(--font-size21);
+}
+
+.container {
+    margin: auto;
+}
+
+section,
+footer {
+    overflow: hidden;
+}
+
+body {
+    background-color: rgb(255, 251, 251);
+}
+
+.btn {
+    font-size: var(--font-size20);
+    font-weight: 600;
+    background: linear-gradient(to right, var(--primary-color-rgb), var(--primary-color-rgb-1));
+    color: var(--color-white);
+    border-radius: 8px;
+}
+
+.btn:hover {
+    box-shadow: 0px 9px 12px 0px rgba(131, 0, 102, 0.4);
+    transition: box-shadow 0.2s ease-in-out 0s;
+    color: var(--color-white);
+}
+
+.btn:focus {
+    box-shadow: none;
+}
+
+/* bottom to top button */
+
+#scrollUp {
+    position: fixed;
+    bottom: 102px;
+    right: 20px;
+    display: none;
+    z-index: 9999;
+    border-radius: 50%;
+    padding: 6px 12px;
+}
+
+/*--- 2 Hearder---- */
+
+.no-scroll {
+    overflow: hidden;
+}
+
+.hidden {
+    display: none;
+}
+
+.header {
+    padding: 29px 0px;
+    box-shadow: 0px 2px 6px 0px rgba(0, 0, 0, 0.1);
+    background-color: var(--color-white);
+}
+
+.header-sticky {
+    position: relative;
+}
+
+.header-sticky.sticky-top {
+    position: fixed;
+    left: 0;
+    top: 0;
+    right: 0;
+    background-color: rgb(255, 255, 255);
+    box-shadow: 0 10px 15px rgba(25, 25, 25, 0.1);
+    z-index: 99999;
+}
+
+.mainmenu li {
+    padding-right: 26px;
+}
+
+.mainmenu li a {
+    color: var(--color-grey);
+    font-size: var(--font-size18);
+    font-weight: 500;
+}
+
+.mainmenu li a:focus-visible {
+    outline: none;
+}
+
+.mainmenu li a.active,
+.mainmenu li a:hover {
+    color: var(--dark-color-red) !important;
+}
+
+.log-in-btn {
+    background: none !important;
+    color: var(--black-color);
+    margin-right: 30px;
+}
+
+.contact-btn {
+    background: var(--dark-color-red);
+    padding: 11px 22px;
+    border-radius: 5px;
+}
+
+.navbar-light .navbar-toggler {
+    color: none;
+    border: none;
+}
+
+.navbar-toggler:focus {
+    box-shadow: 0 0 0 0rem;
+}
+
+.contact-btn:hover {
+    box-shadow: 0px 9px 12px 0px rgba(131, 0, 102, 0.4);
+}
+
+.navbar-toggler-icon {
+    color: black !important;
+}
+
+.log-in-btn {
+    font-size: var(--font-size20);
+    font-weight: 600;
+}
+
+/* ------3 Hero Section------- */
+
+.hero-section {
+    background: linear-gradient(to right, var(--primary-color-rgb), var(--primary-color-rgb-1));
+    padding: 40px 0px 122px;
+    color: var(--color-white);
+}
+
+.hero-img {
+    max-width: 85%;
+}
+
+.hero-btn {
+    background: var(--color-white);
+    color: var(--color-red);
+    padding: 11px 30px;
+}
+
+.hero-btn:hover {
+    color: var(--color-red);
+}
+
+.haert-img {
+    top: 136px;
+    left: 131px;
+
+}
+
+.love_letter-img {
+    top: 43px;
+    left: 246px;
+}
+
+.hero-icon {
+    border-radius: 50%;
+    background-color: var(--color-white);
+    padding: 5px 9px;
+    position: absolute;
+}
+
+.hero-section-text {
+    background-image: url(../images/backgrounds/hero-section-bg.svg);
+    background-repeat: no-repeat;
+    padding-left: 70px;
+}
+
+/* ----4 About section------ */
+
+.about-section {
+    padding: 70px 0px;
+}
+
+.about-box {
+    background-color: var(--color-white);
+    border-radius: 34px;
+    padding: 40px 10px 40px 10px;
+    max-width: 405px;
+    box-shadow: 4px 7px 45px 0px rgba(0, 0, 0, 0.03);
+    box-sizing: border-box;
+}
+
+.about-box-flex {
+    flex-basis: 28%;
+}
+
+.about-box svg {
+    margin: 0px 20px;
+    max-height: 400px;
+}
+
+.meeting-icon-img::before,
+.call-icon-img::before,
+.chat-icon-img::before {
+    content: "";
+    position: absolute;
+    top: 30%;
+    bottom: 0%;
+    left: 30%;
+    height: calc(100% - 55px);
+    width: calc(100% - 50px);
+    border-radius: 50%;
+}
+
+.meeting-icon-img::before {
+    box-shadow: 0px 14px 44px 0px rgba(255, 152, 0, 0.5);
+    background: rgba(255, 152, 0, 16%);
+}
+
+.call-icon-img::before {
+    box-shadow: 0px 14px 44px 0px rgba(255, 0, 0, 0.5);
+    background: rgba(255, 0, 0, 16%);
+}
+
+.chat-icon-img::before {
+    box-shadow: 0px 14px 44px 0px rgba(225, 179, 1, 0.5);
+    background: rgba(225, 179, 1, 16%);
+}
+
+.about-box p {
+    color: var(--color-grey);
+    font-size: var(--font-size18);
+    font-weight: 500;
+}
+
+.about-box span {
+    font-size: var(--font-size26);
+    font-weight: 600;
+}
+
+.col-md-6 {
+    padding-bottom: 30px;
+}
+
+.meet-color {
+    color: var(--color-orange);
+}
+
+.call-color {
+    color: var(--light-color-red);
+}
+
+.chat-color {
+    color: var(--dark-color-golden);
+}
+
+/* -----5 Meet Choosen Section--------*/
+
+.meet-choosen-section {
+    background: rgba(255, 235, 246, 0.34) url("../images/backgrounds/meet-choosen-section-bg.svg");
+    background-repeat: no-repeat;
+    background-position: right;
+    padding: 95px 0px;
+}
+
+.meet-choosen-box {
+    bottom: 43px;
+    background-color: var(--color-white);
+    text-align: center;
+    left: 501px;
+    padding: 22px 34px;
+    border-radius: 10px;
+    box-shadow: -6px 6px 20px 0px rgba(230, 16, 126, 0.17);
+}
+
+.meet-choosen-box p {
+    font-size: 14px;
+    color: rgb(161, 161, 161);
+}
+
+.red-color-box {
+    background-color: rgb(244, 0, 0);
+    border-radius: 50%;
+    padding: 2px 5px 8px;
+    border: 1px solid var(--color-white);
+    box-shadow: 0px 7px 8px 0px rgba(244, 0, 0, 0.37);
+}
+
+.meet-choosen-section .w-100 {
+    width: 87% !important;
+}
+
+.green-color-box {
+    background-color: rgb(0, 244, 49);
+    border-radius: 50%;
+    padding: 2px 5px 8px;
+    border: 1px solid var(--color-white);
+    box-shadow: 0px 7px 8px 0px rgba(73, 244, 0, 0.37);
+}
+
+.meet-choosen-span {
+    color: var(--color-extra-red);
+    font-size: var(--font-size50);
+    font-weight: 800;
+}
+
+.meet-choosen-text p {
+    color: var(--color-grey);
+    padding: 40px 0px;
+}
+
+.meet-choosen-text .btn {
+    padding: 16px 36px;
+}
+
+/* ------6 Lover Communication Section-------*/
+
+.lover-communication {
+    background-color: rgba(255, 251, 251, 1);
+    padding: 35px 0px 102px;
+}
+
+.lover-p-color {
+    color: var(--color-grey);
+}
+
+.lover-communication .container-box span {
+    font-size: 40px;
+    font-weight: 600;
+}
+
+.container-box p {
+    font-size: var(--font-size19);
+}
+
+.container-box {
+    max-width: 273px;
+    background-color: var(--color-white);
+    border-radius: 14px;
+    padding: 20px 0px 20px 33px;
+    box-shadow: 4px 7px 45px 0px rgba(0, 0, 0, 0.03);
+}
+
+.lover-communication .btn {
+    padding: 11px 23px;
+}
+
+.lover-communication-images-bg {
+    background-image: linear-gradient(to top, rgba(255, 238, 239, 1), rgba(255, 251, 251, 1));
+    border-radius: 50%;
+    margin: 50px 15px;
+}
+
+.lover-communication-images {
+    border-radius: 50%;
+    background-image: url(../images/event-images/lover-before-border-rounded.svg);
+    padding: 29px;
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+    width: 100%;
+    height: 100%;
+}
+
+.msg-box {
+    top: 224px;
+    background-color: var(--color-white);
+    border-radius: 7px;
+    box-shadow: 0px 4px 13px 0px rgba(0, 0, 0, 0.06);
+    padding: 11px 14px;
+    left: -49px;
+    box-shadow: 0px 4px 13px 0px rgba(0, 0, 0, 0.06);
+}
+
+.msg-box p {
+    font-size: 20px;
+    color: var(--color-grey);
+
+}
+
+.msg-icon {
+    background: linear-gradient(to right, var(--primary-color-rgb), var(--primary-color-rgb-1));
+    border-radius: 50%;
+    padding: 3px 15px 10px;
+}
+
+.video-call-img {
+    top: 25px;
+    right: -3px;
+}
+
+.video-call-line-arrow::before {
+    content: "";
+    background: url(../images/icons/line-arrow.svg);
+    position: absolute;
+    top: 26px;
+    height: 142px;
+    width: 140px;
+    left: -115px;
+    background-repeat: no-repeat;
+}
+
+.msg-box-2 {
+    top: 106px;
+    left: -84px;
+    background-color: var(--color-white);
+    border-radius: 7px;
+    box-shadow: 0px 4px 13px 0px rgba(0, 0, 0, 0.06);
+    padding: 7px 9px;
+}
+
+.msg-box-2 p {
+    font-size: 12px;
+}
+
+.video-shooting {
+    max-height: 180px;
+}
+
+.msg-icon-2 {
+    background: linear-gradient(to right, rgba(244, 10, 122, 1), var(--primary-color-rgb-1));
+    border-radius: 50%;
+    padding: 0px 7px;
+    height: 24px;
+}
+
+.msg-icon-2 svg {
+    margin: -18px 0px -1px;
+}
+
+.call-box .red-color-box {
+    padding: 2px 3px 8px;
+}
+
+.call-box {
+    background-color: var(--color-white);
+    padding: 20px;
+    border-radius: 20px;
+    top: 50%;
+    right: 18px;
+    box-shadow: 0px 13px 25px 0px rgba(185, 8, 8, 0.16);
+}
+
+.call-box p {
+    font-size: 15px;
+}
+
+/*----7 Your Phone Section-----------*/
+
+.Your-Phone {
+    background-color: rgba(255, 235, 246, 1);
+    background: rgba(255, 235, 246, 1) url(../images/backgrounds/your-phone-banner.png);
+    background-repeat: no-repeat;
+}
+
+.your-phone-img {
+    margin-top: 83px;
+}
+
+.Your-Phone-text {
+    padding: 148px 0px 141px 160px;
+}
+
+.Your-Phone .btn {
+    padding: 11px 30px;
+    border-radius: 8px;
+}
+
+/*------------8 Customer's Say Section---------*/
+
+.customer-say {
+    padding: 81px 0px 30px;
+}
+
+.map-contant {
+    background-image: url(../images/backgrounds/map-banner.svg);
+    padding: 102px 0px 432px;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.map-contant-box {
+    background-color: var(--color-white);
+    max-width: 605px;
+    padding: 40px 46px;
+    border-radius: 21px;
+    box-shadow: 0px 12px 24px 0px rgba(0, 0, 0, 0.25);
+}
+
+.triangle-down {
+    max-width: 0px;
+    position: absolute;
+    max-height: 0px;
+    border-left: 46px solid transparent;
+    border-right: 46px solid transparent;
+    border-top: 50px solid #ffffff;
+    top: 47%;
+    left: 47%;
+}
+
+/*------9 Footer------*/
+
+footer {
+    padding: 44px 0px;
+    background-color: var(--color-purple);
+}
+
+.footer-logo {
+    margin: 22px 0px;
+    height: 29px;
+    width: 161px;
+}
+
+.border-start {
+    color: var(--color-white);
+    margin-left: 50px;
+}
+
+.border-start,
+.list-footer span {
+    font-size: 17px;
+    color: var(--color-white);
+}
+
+.copyright {
+    padding-right: 14px;
+}
+
+.list-footer span {
+    padding-right: 50px;
+}
+
+.social-media-icon {
+    margin-left: 62px;
+}
+
+.border-start {
+    padding-left: 46px;
+    padding-right: 32px;
+}
+
+.icons-rounde {
+    border: none;
+    border-radius: 50%;
+    background-color: var(--color-white);
+    padding: 10px 15px 15px;
+    align-self: center;
+}

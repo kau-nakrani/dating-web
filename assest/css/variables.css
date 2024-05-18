@@ -1,0 +1,31 @@
+:root{
+    
+    /* Theme colors */
+    --primary-color-rgb:rgba(244, 10, 122, 1);
+    --primary-color-rgb-1:rgba(235, 1, 55, 1);
+    --color-white: #fff;
+    --black-color: #000;
+    --color-red: #FF0000;
+    --dark-color-red: #EB0137;
+    --color-orange: #ff9800;
+    --light-color-red: #ff1900 ;
+    --dark-color-golden : #b19f00 ;
+    --color-extra-red : #B90808 ;
+    --color-purple : #38001F ;
+    --color-grey : #5c5c5c ;
+    
+    /* Fonts Size */
+    --font-size58 : 58px;
+    --font-size50 : 50px;
+    --font-size40 : 40px;
+    --font-size26 : 26px;
+    --font-size25 : 25px;
+    --font-size21 : 21px;
+    --font-size20 : 20px;
+    --font-size19 : 19px;
+    --font-size18 : 18px;
+    --font-size17 : 17px;    
+    
+    /* Font Family */    
+    --primery-font: "Sarabun" , sans-serif ;
+}
