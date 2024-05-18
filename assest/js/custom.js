@@ -24,9 +24,9 @@ document.addEventListener("DOMContentLoaded", function () {
 let mybutton = document.getElementById("btn-back-to-top");
 
 
-// window.onscroll = function () {
-//   scrollFunction();
-// };
+window.onscroll = function () {
+  scrollFunction();
+};
 
 function scrollFunction() {
   if (
@@ -60,7 +60,6 @@ document.addEventListener('scroll', () => {
         sticky.classList.add('sticky-top');
     }
 });
-
 
 
 
