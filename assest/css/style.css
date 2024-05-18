@@ -24,7 +24,7 @@
 
     /* 1.  General-Css */
 
-    @import url('var.css');
+    @import url('skin.css');
     
       ::selection {
         background: rgba(244, 10, 122, 1);
@@ -288,7 +288,7 @@
 
 
     .hero-section-text{
-        background-image: url(../images/bg/hero-section-bg-img.svg);
+        background-image: url(../images/backgrounds/hero-section-bg.svg);
         background-repeat: no-repeat;
         padding-left: 70px;
     }
@@ -310,7 +310,7 @@
     .about-box-flex{
         flex-basis: 28%;
     }
-    .about-box img{
+    .about-box svg{
        margin: 0px 20px;
        max-height: 400px;
     }
@@ -371,7 +371,7 @@
     /* -----5.  meet-choosen-section --------*/
 
     .meet-choosen-section{
-        background: rgba(255, 235, 246, 0.34)   url("../images/bg/meet-choosen-section-bg-img.svg");
+        background: rgba(255, 235, 246, 0.34)   url("../images/backgrounds/meet-choosen-section-bg.svg");
         background-repeat: no-repeat;
         background-position: right;
         padding: 0px 0px 95px;
@@ -566,7 +566,7 @@
 
     .Your-Phone{
         background-color: rgba(255, 235, 246, 1);
-        background:  rgba(255, 235, 246, 1) url(../images/bg/Your-Phone-bg.svg);
+        background:  rgba(255, 235, 246, 1) url(../images/backgrounds/your-phone-banner.png);
         background-repeat: no-repeat;  
     }
 
@@ -592,7 +592,7 @@
     }
 
     .map-contant{
-        background-image: url(../images/bg/map-bg.svg);
+        background-image: url(../images/backgrounds/map-bg.svg);
         padding: 102px 0px 432px;
         background-repeat: no-repeat;
         background-position: center;
@@ -658,3 +658,13 @@
         padding-left: 46px;
         padding-right: 32px;
     }   
+
+
+
+
+    .icons-rounde{
+        border: none;
+        border-radius: 50%;
+        background-color: var(--whiteClr);
+        padding: ;
+    }
