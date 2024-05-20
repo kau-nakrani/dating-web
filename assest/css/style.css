@@ -104,6 +104,10 @@ body {
     box-shadow: none;
 }
 
+.btn-p{
+    padding: 16px 36px;
+}
+
 /* bottom to top button */
 
 #scrollUp {
@@ -379,10 +383,6 @@ body {
     padding: 40px 0px;
 }
 
-.meet-choosen-text .btn {
-    padding: 16px 36px;
-}
-
 /* ------6 Lover Communication Section-------*/
 
 .lover-communication {
@@ -409,10 +409,6 @@ body {
     border-radius: 14px;
     padding: 20px 0px 20px 33px;
     box-shadow: 4px 7px 45px 0px rgba(0, 0, 0, 0.03);
-}
-
-.lover-communication .btn {
-    padding: 11px 23px;
 }
 
 .lover-communication-images-bg {
@@ -503,7 +499,7 @@ body {
 
 .call-box {
     background-color: var(--color-white);
-    padding: 20px;
+    padding: 20px 23px;
     border-radius: 20px;
     top: 50%;
     right: 18px;
@@ -531,7 +527,6 @@ body {
 }
 
 .Your-Phone .btn {
-    padding: 11px 30px;
     border-radius: 8px;
 }
 
@@ -556,16 +551,31 @@ body {
     box-shadow: 0px 12px 24px 0px rgba(0, 0, 0, 0.25);
 }
 
-.triangle-down {
-    max-width: 0px;
+.map-contant-box:after {
+    top: 100%;
+    left: 48px;
+    border: solid transparent;
+    content: " ";
+    height: 0;
+    width: 0;
     position: absolute;
-    max-height: 0px;
-    border-left: 46px solid transparent;
-    border-right: 46px solid transparent;
-    border-top: 50px solid #ffffff;
-    top: 47%;
-    left: 47%;
-}
+    pointer-events: none;
+    border-top-color: #fff;
+    border-width: 18px;
+    margin-left: -18px;
+    left: 49%;
+  }
+  .map-contant-box:before {
+    content: '';
+    position: absolute;
+    transform: rotate(45deg);
+    width: 36px;
+    height: 36px;
+    bottom: -12px;
+    z-index: -1;
+    left: 46%;
+    box-shadow: 0px 12px 24px 0px rgba(0, 0, 0, 0.25);
+  }
 
 /*------9 Footer------*/
 
@@ -614,4 +624,21 @@ footer {
     background-color: var(--color-white);
     padding: 10px 15px 15px;
     align-self: center;
+}
+
+
+/* ---Coming Soon----- */
+
+.coming-soon {
+    background: linear-gradient(to right, rgba(244, 10, 122, 1), rgba(235, 1, 55, 1)); 
+    background-size: cover; 
+    background-repeat: no-repeat;
+}
+
+
+.coming-soon h2{
+    font-size: 118px !important;
+    color: var(--color-white);
+    padding: 254px 0;
+    background: url('../images/backgrounds/coming-soon-heart.svg');
 }

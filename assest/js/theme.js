@@ -45,16 +45,18 @@ document.addEventListener('scroll', () => {
 /*----------------------------------------------------*/
 let bottomTopbtn = document.getElementById("scrollUp");
 
-window.onscroll = function () {
-  if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
-    bottomTopbtn.style.display = "block";
-  } else {
-    bottomTopbtn.style.display = "none";
+if (bottomTopbtn) {
+  window.onscroll = function () {
+    if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+      bottomTopbtn.style.display = "block";
+    } else {
+      bottomTopbtn.style.display = "none";
+    }
   }
-}
 
-bottomTopbtn.addEventListener("click", backToTop);
-function backToTop() {
-  document.body.scrollTop = 0;
-  document.documentElement.scrollTop = 0;
+  bottomTopbtn.addEventListener("click", backToTop);
+  function backToTop() {
+    document.body.scrollTop = 0;
+    document.documentElement.scrollTop = 0;
+  }
 }

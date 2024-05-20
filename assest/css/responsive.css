@@ -50,9 +50,6 @@
     }
     
     .meet-choosen-box {
-        bottom: 43px;
-        background-color: var(--whiteClr);
-        text-align: center;
         left: unset; 
         right: 0px;
     }
@@ -112,9 +109,27 @@
     .container-box {
         padding: 20px 9px;
     }
+    .video-call-line-arrow::before {
+        left: -67px;
+        background-size: 50%;
+    }
+    .msg-box svg{
+        height: 10px !important;
+        width: auto;
+        margin-bottom: 5px;
+    }
+    .msg-box p {
+        font-size: 12px;
+    }
+    .msg-icon {
+        padding: 0px 9px 0px;
+    }
+    .msg-box{
+        padding: 8px;
+        left: -24px;
+    }
     .your-phone-img {
         margin-top: 50px;
-        width: 549px;
     }
     .list-footer span {
         padding-right: 15px;
@@ -127,9 +142,6 @@
         margin-left: 0px;
     }
     .icons-rounde {
-        border: none;
-        border-radius: 50%;
-        background-color: var(--whiteClr);
         padding: 0px 6px 3px
     }
     .icons-rounde svg{
@@ -182,6 +194,12 @@
     .shift-content {
         transition: margin-right 0.3s ease;
     }
+    .about-box p {
+        font-size: 15px;
+    }
+    .about-box-flex {
+        flex-basis: 45%;
+    }
     
     .shifted {
         margin-right: 80%; 
@@ -204,9 +222,9 @@
     .Your-Phone-text{
         padding: 60px 0px 60px 30px;
     }
-    .your-phone-img{
-            width: 73%;
-        
+  
+    .Your-Phone {
+        background-size: cover;
     }
     .msg-box {
         padding: 11px 7px;
@@ -233,6 +251,7 @@
     .footer-logo {
         margin: 9px 0px;
     }
+
 }
 @media (max-width: 768px) {
 	p{
@@ -280,24 +299,23 @@
     .map-contant-box {
         width: 480px;
     }
-    .triangle-down {
-        top: 45%;
-        left: 44%;
-    }
     .btn-floating{
         display: none;
       }
 }
 @media (max-width: 520px) {
-    h6{
-        font-size: 17px;
+    h2 {
+        font-size: 31px;
     }
     h5{
         font-size: 22px;
     }
-    /* .header {
+    h6{
+        font-size: 17px;
+    }   
+    .header {
         padding: 0px 0px;
-    } */
+    }
     .haert-img {
         top: 88px;
         left: 58px;
@@ -391,10 +409,6 @@
         padding: 84px 0px 148px;
         background-position: bottom;
         background-size: contain;
-    }
-    .triangle-down {
-        top: 61%;
-        left: 42%;
     }
     .border-start, .list-footer span {
         font-size: 10px;
